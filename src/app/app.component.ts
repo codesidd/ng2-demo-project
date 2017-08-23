@@ -19,4 +19,10 @@ export class AppComponent {
     console.log("Favorite changed: ", eventArgs);
   }
 
+  tweet = {
+    body: '...',
+    likesCount: 10,
+    isLiked: true
+  }
+
 }
