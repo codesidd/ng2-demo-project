@@ -27,6 +27,12 @@ export class AppComponent {
 
   // courses = [1, 2];
 
-  viewMode = 'somethingElse';
-  
+  // viewMode = 'somethingElse';
+
+  courses = [
+    { id: 1, name: 'course1 '},
+    { id: 2, name: 'course2 '},
+    { id: 3, name: 'course3 '}
+  ]
+
 }
