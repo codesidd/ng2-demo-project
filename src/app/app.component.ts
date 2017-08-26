@@ -10,14 +10,14 @@ export class AppComponent {
 
   // imageUrl = "http://lorempixel.com/400/200";
   
-  post = {
-    title: "Title",
-    isFavorite: true
-  }
+  // post = {
+  //   title: "Title",
+  //   isFavorite: true
+  // }
 
-  onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {
-    console.log("Favorite changed: ", eventArgs);
-  }
+  // onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {
+  //   console.log("Favorite changed: ", eventArgs);
+  // }
 
   // tweet = {
   //   body: '...',
@@ -58,4 +58,5 @@ export class AppComponent {
   // }
 
 
+  canSave = true;
 }

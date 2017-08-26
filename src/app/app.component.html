@@ -10,8 +10,8 @@
 
 <!-- <h1>Hello World</h1> -->
 
-<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
-<span class="glyphicon glyphicon-user"></span>
+<!-- <favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
+<span class="glyphicon glyphicon-user"></span> -->
 
 <!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
@@ -64,3 +64,22 @@
         <button (click)="onChange(course)">Update</button>
     </li>
 </ul> -->
+
+
+<button
+    [style.backgroundColor]="canSave ? 'blue': 'gray'"
+    [style.color]="canSave ? 'white': 'black'"
+    [style.fontWeight]="canSave ? 'bold': 'normal'"
+>
+    Save 1 - style property binding
+</button>
+<br><br>
+<button
+    [ngStyle]="{
+        'backgroundColor': canSave ? 'blue': 'gray',
+        'color': canSave ? 'white': 'black',
+        'fontWeight': canSave ? 'bold': 'normal'
+    }"
+>
+    Save 2 - ngStyle binding
+</button>
