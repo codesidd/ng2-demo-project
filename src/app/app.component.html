@@ -66,7 +66,7 @@
 </ul> -->
 
 
-<button
+<!-- <button
     [style.backgroundColor]="canSave ? 'blue': 'gray'"
     [style.color]="canSave ? 'white': 'black'"
     [style.fontWeight]="canSave ? 'bold': 'normal'"
@@ -82,4 +82,10 @@
     }"
 >
     Save 2 - ngStyle binding
-</button>
+</button> -->
+
+
+<!-- Safe Traversal Operator -->
+<span *ngIf="task.assignee">{{ task.assignee.name }}</span>
+<br><br>
+<span>{{ task.assignee?.name }}</span>
