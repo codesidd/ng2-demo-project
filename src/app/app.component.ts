@@ -10,14 +10,14 @@ export class AppComponent {
 
   // imageUrl = "http://lorempixel.com/400/200";
   
-  // post = {
-  //   title: "Title",
-  //   isFavorite: true
-  // }
+  post = {
+    title: "Title",
+    isFavorite: true
+  }
 
-  // onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {
-  //   console.log("Favorite changed: ", eventArgs);
-  // }
+  onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {
+    console.log("Favorite changed: ", eventArgs);
+  }
 
   // tweet = {
   //   body: '...',
@@ -29,30 +29,33 @@ export class AppComponent {
 
   // viewMode = 'somethingElse';
 
-  courses;
 
-  onAdd() {
-    this.courses.push({ id: 4, name: 'course4' })
-  }
+  // courses;
 
-  onRemove(courses) {
-    let index = this.courses.indexOf(courses);
-    this.courses.splice(index, 1);
-  }
+  // onAdd() {
+  //   this.courses.push({ id: 4, name: 'course4' })
+  // }
 
-  onChange(course) {
-    course.name = 'UPDATED';
-  }
+  // onRemove(courses) {
+  //   let index = this.courses.indexOf(courses);
+  //   this.courses.splice(index, 1);
+  // }
 
-  loadCourses() {
-    this.courses = [
-      { id: 1, name: 'course1' },
-      { id: 2, name: 'course2' },
-      { id: 3, name: 'course3' }
-    ];
-  }
+  // onChange(course) {
+  //   course.name = 'UPDATED';
+  // }
 
-  trackCourse(index, course) {
-    return course ? course.id : undefined;
-  }
+  // loadCourses() {
+  //   this.courses = [
+  //     { id: 1, name: 'course1' },
+  //     { id: 2, name: 'course2' },
+  //     { id: 3, name: 'course3' }
+  //   ];
+  // }
+
+  // trackCourse(index, course) {
+  //   return course ? course.id : undefined;
+  // }
+
+
 }
